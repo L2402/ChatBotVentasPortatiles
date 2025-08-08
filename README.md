@@ -34,11 +34,9 @@ rasa init
 ```sql
 -- Crear base de datos
 CREATE DATABASE chatbot_db;
-CREATE USER chatbot_user WITH PASSWORD 'tu_password';
-GRANT ALL PRIVILEGES ON DATABASE chatbot_db TO chatbot_user;
 
 -- Tabla productos
-CREATE TABLE productos (
+CREATE TABLE laptops (
     id SERIAL PRIMARY KEY,
     nombre VARCHAR(255),
     procesador VARCHAR(100),
@@ -1043,4 +1041,5 @@ ChatBot/
 
 **Documento preparado por:** Reyes Vinces Jeremy Daniel, Muñoz Miranda Felix Anthony, Anchundia Lucas Eduardo Jesus 
 **Fecha:** Agosto 2025
+
 **Versión:** 2.0 - Completa 
