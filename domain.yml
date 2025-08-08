@@ -1,0 +1,45 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - ask_for_product  
+  - ask_for_accessories
+  - ask_for_comparison
+  - ask_for_recommendation
+
+responses:
+  utter_greet:
+  - text: "¡Hola! ¿Cómo estás?"
+
+  utter_cheer_up:
+  - text: "Aquí tienes algo que te alegrará:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "¿Te ayudó eso?"
+
+  utter_happy:
+  - text: "¡Genial, sigue así!"
+
+  utter_goodbye:
+  - text: "¡Adiós!"
+
+  utter_iamabot:
+  - text: "Soy un bot, impulsado por Rasa."
+
+actions:
+  - action_query_products 
+  - action_recommend_accessories
+  - action_compare_laptops
+  - action_specific_recommendation
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+  
